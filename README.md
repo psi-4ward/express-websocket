@@ -31,6 +31,7 @@ expressWebsocket(app, httpServer, { /* primus options */ });
 In addition to primus options you can pass a `beforeExpress: function(req, res, cb) {...} ` property to hook in right befor the
  data goes out to express router. 
 
+Start your app with `DEBUG=express-websocket node app.js` to enable debug output
 
 ### Client
 ```html
