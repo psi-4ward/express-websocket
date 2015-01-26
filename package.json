@@ -1,0 +1,38 @@
+{
+  "name": "express-websocket",
+  "version": "1.0.0",
+  "description": "Access express routes through websocket requests",
+  "main": "index.js",
+  "dependencies": {
+    "debug": "^2.1.1",
+    "engine.io": "^1.5.1",
+    "lodash.merge": "^2.4.1",
+    "primus-responder": "^1.0.3",
+    "primus": "^2.4.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psi-4ward/express-websocket"
+  },
+  "keywords": [
+    "express",
+    "express.js",
+    "websocket",
+    "request",
+    "primus"
+  ],
+  "author": {
+    "name": "Christoph Wiechert",
+    "email": "wio@psitrax.de",
+    "url": "http://4wardmedia.de/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/psi-4ward/express-websocket/issues"
+  },
+  "homepage": "https://github.com/psi-4ward/express-websocket"
+}
