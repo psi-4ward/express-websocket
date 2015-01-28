@@ -42,6 +42,13 @@ module.exports = function initExpressWebsocket(expressApp, server, opts) {
       var req = new VirtualRequest(jreq);
       var res = new VirtualResponse(req);
       res.on('finish', function() {
+        // try to decode body-json
+        if(res.headers['Content-Type'] && res.headers['Content-Type'].indexOf('application/json') > -1) {
+          try {
+            res.body = JSON.parse(res.body);
+          } catch(e) {}
+        }
+
         done({
           status: res.statusMessage,
           statusCode: res.statusCode,
